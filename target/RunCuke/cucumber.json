@@ -1,0 +1,709 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9333475100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "verify user is able to create account successfully",
+        "description": "",
+        "id": "account-creation-test;verify-user-is-able-to-create-account-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 25100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 288973500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on sign in link",
+            "match": {
+              "location": "Steps.iClickOnSigningLink()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20121507300,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027email_create\u0027]\"}\n  (Session info: chrome\u003d96.0.4664.110)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027HEMAL\u0027, ip: \u0027192.168.0.41\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [16e36480b51a0ade4ee94816e85ab361, findElement {using\u003dxpath, value\u003d//input[@id\u003d\u0027email_create\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\HEMALP~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61587/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 16e36480b51a0ade4ee94816e85ab361\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy23.sendKeys(Unknown Source)\r\n\tat com.automationpractice.utility.Utility.sendTextToElement(Utility.java:147)\r\n\tat com.automationpractice.pages.SigningPage.fillInEmailToCreateAccount(SigningPage.java:30)\r\n\tat com.automationpractice.cucumber.steps.Steps.iEnterEmailForCreateAccount(Steps.java:104)\r\n\tat ✽.When I enter email for create account(accounttestcreation.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I enter email for create account",
+            "match": {
+              "location": "Steps.iEnterEmailForCreateAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I click on create new account button",
+            "match": {
+              "location": "Steps.iClickOnCreateNewAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I enter below details in the form",
+            "match": {
+              "location": "Steps.iEnterBelowDetailsInTheForm(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "address",
+                  "city",
+                  "state",
+                  "postal",
+                  "country",
+                  "phone"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Max",
+                  "Murphy",
+                  "passwrod10",
+                  "High street",
+                  "New York",
+                  "1",
+                  "123456",
+                  "55",
+                  "01234538475"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I click on register button",
+            "match": {
+              "location": "Steps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I verify account name \"Max\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Max",
+                  "offset": 23
+                }
+              ],
+              "location": "Steps.iVerifyAccountName(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6637456900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "verify user is not able to create account successfully using invalid data in form",
+        "description": "",
+        "id": "account-creation-test;verify-user-is-not-able-to-create-account-successfully-using-invalid-data-in-form",
+        "after": [
+          {
+            "result": {
+              "duration": 24000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 37600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on sign in link",
+            "match": {
+              "location": "Steps.iClickOnSigningLink()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12589079500,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@id\u003d\u0027email_create\u0027]\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027HEMAL\u0027, ip: \u0027192.168.0.41\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy23.sendKeys(Unknown Source)\r\n\tat com.automationpractice.utility.Utility.sendTextToElement(Utility.java:147)\r\n\tat com.automationpractice.pages.SigningPage.fillInEmailToCreateAccount(SigningPage.java:30)\r\n\tat com.automationpractice.cucumber.steps.Steps.iEnterEmailForCreateAccount(Steps.java:104)\r\n\tat ✽.When I enter email for create account(accounttestcreation.feature:22)\r\n",
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "I enter email for create account",
+            "match": {
+              "location": "Steps.iEnterEmailForCreateAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I click on create new account button",
+            "match": {
+              "location": "Steps.iClickOnCreateNewAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I enter below details in the form",
+            "match": {
+              "location": "Steps.iEnterBelowDetailsInTheForm(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "address",
+                  "city",
+                  "state",
+                  "postal",
+                  "country",
+                  "phone"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "$$",
+                  "\u0026\u0026",
+                  "",
+                  "",
+                  "16784567",
+                  "1",
+                  "CODE",
+                  "20",
+                  "19234533"
+                ],
+                "line": 26
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I click on register button",
+            "match": {
+              "location": "Steps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I verify the error message displayed which contains \"errors\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "errors",
+                  "offset": 53
+                }
+              ],
+              "location": "Steps.iVerifyTheErrorMessageDisplayedWhichContains(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Account Creation Test",
+    "description": "\r\nAs a user I should be able to create account successfully",
+    "id": "account-creation-test",
+    "keyword": "Feature",
+    "uri": "accounttestcreation.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6639909400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "verify if user is able to empty the shopping cart",
+        "description": "",
+        "id": "shopping-cart-test;verify-if-user-is-able-to-empty-the-shopping-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 90900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6233700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select menu \"DRESSES\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DRESSES",
+                  "offset": 15
+                }
+              ],
+              "location": "Steps.iSelectMenu(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2065850000,
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d96.0.4664.110)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027HEMAL\u0027, ip: \u0027192.168.0.41\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [96dfcb85913c0d85e1ecad318ef5b357, getElementText {id\u003d26e3b303-0e33-41b3-87f9-21a9c30d6cfc}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\HEMALP~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61646}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61646/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (96dfcb85913c0d85e1ecad318ef5b357)] -\u003e xpath: //ul[@class\u003d\u0027product_list grid row\u0027]//div[@class\u003d\u0027right-block\u0027]//h5//a]\nSession ID: 96dfcb85913c0d85e1ecad318ef5b357\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)\r\n\tat com.automationpractice.pages.DressesPage.selectProduct(DressesPage.java:29)\r\n\tat com.automationpractice.cucumber.steps.Steps.iClickOnSelectedProduct(Steps.java:47)\r\n\tat ✽.When I click on selected product \"Printed Chiffon Dress\"(shoppingtestcart.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I click on selected product \"Printed Chiffon Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Chiffon Dress",
+                  "offset": 29
+                }
+              ],
+              "location": "Steps.iClickOnSelectedProduct(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I click on add to cart button",
+            "match": {
+              "location": "Steps.iClickOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I click on proceed to checkout button",
+            "match": {
+              "location": "Steps.iClickOnProceedToCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I verify product is added to shopping cart",
+            "match": {
+              "location": "Steps.iVerifyProductIsAddedToShoppingCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I verify if delete button is available in shopping cart",
+            "match": {
+              "location": "Steps.iVerifyIfDeleteButtonIsAvailableInShoppingCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I click on delete button",
+            "match": {
+              "location": "Steps.iClickOnDeleteButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I verify banner message \"Your shopping cart is empty.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your shopping cart is empty.",
+                  "offset": 25
+                }
+              ],
+              "location": "Steps.iVerifyBannerMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Shopping cart test",
+    "description": "As a user I should be able to empty shopping cart successfully",
+    "id": "shopping-cart-test",
+    "keyword": "Feature",
+    "uri": "shoppingtestcart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7478199700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "verify user is able to navigate to Summer Dresses page",
+        "description": "",
+        "id": "sub-menu-navigation-test;verify-user-is-able-to-navigate-to-summer-dresses-page",
+        "after": [
+          {
+            "result": {
+              "duration": 21500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 137300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I hover mouse to \"WOMEN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WOMEN",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.iHoverMouseTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I hover mouse and click on submenu \"Summer Dresses\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Summer Dresses",
+                  "offset": 36
+                }
+              ],
+              "location": "Steps.iHoverMouseAndClickOnSubmenu(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 151910200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify if heading of page is \"SUMMER DRESSES\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SUMMER DRESSES",
+                  "offset": 32
+                }
+              ],
+              "location": "Steps.iVerifyIfHeadingOfPageIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7191153400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "verify user is able to filter price change and see the change in search results",
+        "description": "",
+        "id": "sub-menu-navigation-test;verify-user-is-able-to-filter-price-change-and-see-the-change-in-search-results",
+        "after": [
+          {
+            "result": {
+              "duration": 20600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38324675800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I change the price range on slider of max price to \"20.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20.00",
+                  "offset": 52
+                }
+              ],
+              "location": "Steps.iChangeThePriceRangeOnSliderOfMaxPriceTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 279134800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify if search results are priced withing the max price range \"20.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20.00",
+                  "offset": 67
+                }
+              ],
+              "location": "Steps.iVerifyIfSearchResultsArePricedWithingTheMaxPriceRange(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Sub Menu Navigation Test",
+    "description": "As a user I should be able to navigate to submenu page",
+    "id": "sub-menu-navigation-test",
+    "keyword": "Feature",
+    "uri": "submenunavigationtest.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8185505000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "verify user is able to drag map to targeted location and take screenshot having location in centre",
+        "description": "",
+        "id": "stores-on-map-screenshot-test;verify-user-is-able-to-drag-map-to-targeted-location-and-take-screenshot-having-location-in-centre",
+        "after": [
+          {
+            "result": {
+              "duration": 18800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2204860600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on information link \"Our stores\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Our stores",
+                  "offset": 29
+                }
+              ],
+              "location": "Steps.iClickOnInformationLink(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7169260900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am able to drag map to Palm Beach Location and take screenshot",
+            "match": {
+              "location": "Steps.iAmAbleToDragMapToPalmBeachLocationAndTakeScreenshot()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Stores On Map Screenshot Test",
+    "description": "\r\nAs a user I should be able to drag map to targeted location and take screenshot",
+    "id": "stores-on-map-screenshot-test",
+    "keyword": "Feature",
+    "uri": "testmap.feature"
+  }
+]
